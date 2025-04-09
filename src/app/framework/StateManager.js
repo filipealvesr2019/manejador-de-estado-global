@@ -9,4 +9,10 @@ class StateManager {
         }
         this.observers.get(key).push(callback);
     }
+
+    notify(key){
+        if(this.observers.has(key)){
+            this.observers.get(key).forEach(callback => callback(store.getState(key)));
+        }
+    }
 }

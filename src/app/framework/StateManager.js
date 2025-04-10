@@ -15,4 +15,13 @@ class StateManager {
             this.observers.get(key).forEach(callback => callback(store.getState(key)));
         }
     }
+
+    setState(key, value){
+        store.setState(key, value);
+        this.notify(key)
+    }
+
+    getState(key){
+        return store.getState(key)
+    }
 }

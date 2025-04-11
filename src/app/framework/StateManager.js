@@ -25,3 +25,5 @@ class StateManager {
         return store.getState(key)
     }
 }
+
+export const stateManager = new StateManager();

@@ -10,6 +10,14 @@ class StateManager {
         this.observers.get(key).push(callback);
     }
 
+    unsubscribe(key, callback){
+        const sub = this.observers.get(key) || [];
+        this.observers.set(
+            key,
+            sub.filter(cb => cb !== callback)
+        );
+    }
+
     notify(key){
         if(this.observers.has(key)){
             this.observers.get(key).forEach(callback => callback(store.getState(key)));

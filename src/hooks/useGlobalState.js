@@ -12,5 +12,5 @@ export function useGlobalState(){
         stateManager.setState(key, newValue);
     }
 
-    return [value, setGlobalState]
+    return [value, setGlobalState];
 }

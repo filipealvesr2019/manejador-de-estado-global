@@ -5,4 +5,10 @@ export default function AddCardButton(){
         const newCount = (cartCount || 0) + 1;
         setCartCount(newCount);
     };
+
+    return (
+        <button onClick={addToCart}>
+            Adicionar ao Carrinho
+        </button>
+    )
 }

@@ -1,4 +1,7 @@
 "use Client";
+
+import { useEffect, useState } from "react";
+
 export function useGlobalState(){
     const [value, setValue] = useState(() => stateManager.getState(key));
 

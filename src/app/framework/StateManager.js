@@ -1,3 +1,5 @@
+import { store } from "./Store";
+
 class StateManager {
     constructor(){
         this.observers = new Map();

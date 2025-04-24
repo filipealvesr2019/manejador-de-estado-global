@@ -1,3 +1,6 @@
+"use client"
+import { useGlobalState } from "@/hooks/useGlobalState";
+
 export default function AddCardButton(){
     const [cartCount, setCartCount] = useGlobalState("cartCount");
 

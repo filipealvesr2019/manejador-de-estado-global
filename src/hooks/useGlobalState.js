@@ -12,7 +12,7 @@ export function useGlobalState(key){
         return () => stateManager.unsubscribe(key, update);
     }, [key]);
 
-    const setGlobalState = () => {
+    const setGlobalState = (newValue) => {
         stateManager.setState(key, newValue);
     }
 

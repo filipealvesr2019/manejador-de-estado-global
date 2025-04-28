@@ -12,7 +12,7 @@ class Store {
     }
     
     getState(key){
-        this.state.get(key)
+       return this.state.get(key)
     }
 
     loadFromLocalStorage(){

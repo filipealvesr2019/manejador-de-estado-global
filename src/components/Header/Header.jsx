@@ -1,5 +1,6 @@
 
-"use client"
+"use client";
+
 import CartIcon from "../CartIcon";
 import styles from './Header.module.css'
 

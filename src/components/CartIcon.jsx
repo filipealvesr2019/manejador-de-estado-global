@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { useGlobalState } from '@/hooks/useGlobalState';
 import styles from './CartIcon.module.css'
 export default function CartIcon(){

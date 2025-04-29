@@ -3,7 +3,7 @@
 import { useGlobalState } from '@/hooks/useGlobalState';
 import styles from './CartIcon.module.css'
 export default function CartIcon(){
-   const [cartCount] = useGlobalState("cartCount");
+   const [cartCount] = useGlobalState("cartCount", 0);
 
 
     return (

@@ -1,3 +1,5 @@
+import { useGlobalState } from "@/hooks/useGlobalState";
+
 export default function ProductList(){
     const [produtos, setProdutos] = useGlobalState("produtos");
 

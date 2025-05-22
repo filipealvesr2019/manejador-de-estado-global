@@ -12,7 +12,13 @@ export default function ProductList(){
             method: "POST",
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify({ produtoId, quantidade: 1 })
-        })
+        });
+
+        const res = await fetch("http://localhost:3000/carrinho");
+        const data = await res.json();
+        const total = data.produtos.reduce((acc, p) => acc + p.quantidade, 0);
+        const [_, setCarrinhoCount] = useGlobalState("carrinho");
+        setCarrinhoCount(total)
     }
     return (
         <div>

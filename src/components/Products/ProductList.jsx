@@ -24,7 +24,13 @@ export default function ProductList(){
     }
     return (
         <div>
-        
+            {produtos?.map(p => (
+                <div key={p._id}>
+                    <h2>{p.nome}</h2>
+                    <p> R$ {p.prico}</p>
+                    <button onClick={() => adicionarAoCarrinho(p._id)}>Adicionar</button>
+                </div>
+            ))}
         </div>
     )
 }

@@ -1,4 +1,6 @@
+"use client"
 import { useGlobalState } from "@/hooks/useGlobalState";
+import { useEffect } from "react";
 
 export default function ProductList(){
     const [produtos, setProdutos] = useGlobalState("produtos");

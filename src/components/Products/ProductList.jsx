@@ -6,7 +6,7 @@ export default function ProductList(){
     const [produtos, setProdutos] = useGlobalState("produtos");
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/products")
+        fetch("http://localhost:3000/produtos")
         .then(res => res.json())
         .then(setProdutos)
     }, []);

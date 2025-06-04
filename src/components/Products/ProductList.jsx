@@ -30,7 +30,7 @@ export default function ProductList(){
             {produtos?.map(p => (
                 <div key={p._id}>
                     <h2>{p.nome}</h2>
-                    <p> R$ {p.prico}</p>
+                    <p> R$ {p.preco}</p>
                     <button onClick={() => adicionarAoCarrinho(p._id)}>Adicionar</button>
                 </div>
             ))}

@@ -1,6 +1,7 @@
 
 "use client";
 
+import Link from "next/link";
 import CartIcon from "../CartIcon";
 import styles from './Header.module.css'
 
@@ -9,9 +10,9 @@ export default function Header(){
         <header className={styles.container}>
             <div className={styles.div}>
             <span>Logo</span>
-            <div>
+            <Link href={"/cart"}>
                 <CartIcon />
-            </div>
+            </Link>
 
             </div>
         </header>

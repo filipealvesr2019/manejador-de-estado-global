@@ -1,3 +1,4 @@
+"use client"
 import { useGlobalState } from "@/hooks/useGlobalState"
 import { useEffect } from "react";
 

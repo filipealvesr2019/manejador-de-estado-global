@@ -28,6 +28,13 @@ export default function Cart(){
     return (
         <>
         <h2>Carrinho</h2>
+        <ul>
+            {cart?.produtos.map((item) => (
+                <li key={item.produtoId._id}>
+                    <strong>{item.produtoId.nome}</strong> - {item.quantidade} X R$ {item.produtoId.preco}
+                </li>
+            ))}
+        </ul>
         </>
     )
 }
